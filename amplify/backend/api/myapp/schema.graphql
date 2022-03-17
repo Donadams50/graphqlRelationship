@@ -1,12 +1,12 @@
-
 type Department @model{
   id: ID!
   name: String
+  manager: Employee @hasOne
 }
 
-
-type Employees @model{
+type Employee @model{
   id: ID!
   name: String
   age: Int
 }
+
